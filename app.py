@@ -64,12 +64,9 @@ performance_metrics = ['Accuracy', 'Balanced_Accuracy', 'Precision', 'Recall','M
 selected_metrics = st.sidebar.multiselect('Performance metrics', performance_metrics, performance_metrics)
 
 # Main panel
-
 image = Image.open('logo.png')
 st.image(image, width = 500)
-
 st.title('Model Performance Calculator App')
-
 st.markdown("""
 This app calculates the model performance metrics given the actual and predicted values.
 * **Python libraries:** `base64`, `pandas`, `streamlit`, `scikit-learn`
