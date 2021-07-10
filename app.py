@@ -58,7 +58,6 @@ st.sidebar.markdown("""
 # Sidebar panel - Upload input file
 uploaded_file = st.sidebar.file_uploader('Upload your input CSV file', type=['csv'])
 
-
 # Sidebar panel - Performance metrics
 performance_metrics = ['Accuracy', 'Balanced_Accuracy', 'Precision', 'Recall','MCC', 'F1', 'Cohen_Kappa']
 selected_metrics = st.sidebar.multiselect('Performance metrics', performance_metrics, performance_metrics)
